@@ -42,7 +42,7 @@ To run the development server, execute the following command:
 
     python manage.py runserver
 
-The application will be available at http://127.0.0.1:8000/.
+The application will be available at http://127.0.0.1:8000/quiz.
 
 ## Running Tests
 
