@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Quiz</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alphabet Quiz</h1>
+        
+        <section class="question-section">
+            <p class="question">What is the name of this letter?</p>
+            <div class="letter-display"></div>
+            <button class="record-btn">Record</button>
+            <p class="recording-status" style="display: none;">Recording...</p>
+        </section>
+        
+        <section class="progress-section">
+            <p class="progress">Progress: <span class="current-question">1</span>/26</p>
+            <p class="score">Score: <span class="current-score">0</span></p>
+        </section>
+        
+        <button class="submit-answer" disabled>Submit</button>
+        <button class="next-question" style="display: none;">Next</button>
+    </div>
+    <!-- Link your JavaScript file here -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
